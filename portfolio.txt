@@ -1,0 +1,3 @@
+Stock: AAPL
+Quantity: 5
+Investment Value: $900
