@@ -1,3 +1,3 @@
-Stock: AAPL
-Quantity: 5
-Investment Value: $900
+Stock: TCS
+Quantity: 6
+Investment Value: ₹22800

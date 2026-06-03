@@ -1,14 +1,19 @@
 stocks = {
-    "AAPL": 180,
-    "TSLA": 250,
-    "GOOG": 140,
-    "MSFT": 330
+    "RELIANCE": 1450,
+    "TCS": 3800,
+    "INFY": 1600,
+    "HDFCBANK": 1700,
+    "ICICIBANK": 1200,
+    "SBIN": 850,
+    "ITC": 430,
+    "WIPRO": 520
 }
 
-print("Available Stocks:")
+print("📈 Indian Stock Portfolio Tracker")
+print("\nAvailable Stocks:")
 
 for stock, price in stocks.items():
-    print(stock, "=", "$" + str(price))
+    print(stock, "= ₹" + str(price))
 
 stock_name = input("\nEnter Stock Name: ").upper()
 
@@ -18,12 +23,12 @@ if stock_name in stocks:
 
     investment = stocks[stock_name] * quantity
 
-    print("\nInvestment Value = $", investment)
+    print("\nInvestment Value = ₹", investment)
 
-    with open("portfolio.txt", "w") as file:
+    with open("portfolio.txt", "w", encoding="utf-8") as file:
         file.write(f"Stock: {stock_name}\n")
         file.write(f"Quantity: {quantity}\n")
-        file.write(f"Investment Value: ${investment}")
+        file.write(f"Investment Value: ₹{investment}")
 
     print("Portfolio saved to portfolio.txt")
 
