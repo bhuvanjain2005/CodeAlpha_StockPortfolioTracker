@@ -9,7 +9,7 @@ stocks = {
     "WIPRO": 520
 }
 
-print("📈 Indian Stock Portfolio Tracker")
+print("Stock Portfolio Tracker")
 print("\nAvailable Stocks:")
 
 for stock, price in stocks.items():
